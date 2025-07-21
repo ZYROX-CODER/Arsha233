@@ -1,0 +1,94 @@
+:root{
+    --base-color : #37517E;
+}
+
+.hero-container{
+    background-color: var(--base-color);
+}
+nav a{
+    color: white !important;
+}
+
+.dropdown-menu a{
+    color: black !important;
+}
+
+.animate-image{
+   animation: move 1s ease-in-out    infinite    alternate;
+}
+
+@keyframes move{
+    from{
+        transform: translateY(-10);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+
+
+.text-blue{
+    color: var(--base-color) !important;
+}
+
+.gray{
+    width: 150px;
+    height:2px ;
+    background-color: lightgray;
+    margin: auto;
+    position: relative;
+}
+.blue{
+    width: 50%;
+    height: 3px;
+    background-color:var(--bs-info);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.text-color{
+    color: #37517E;
+}
+
+.hover:hover{
+    color: cyan;
+}
+.hover{
+    transition: all 0.4s;
+}
+
+.p-heading{
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.work-card img{
+    transition: all 0.4s;
+}
+
+.work-card:hover img{
+    scale: 1.1;
+}
+.work-card h2{
+   z-index: 333;
+   position: relative;
+}
+.work-card:hover .content{
+    transform: translateY(-5px);
+}
+.work-card .content{
+    transition: all 0.4s;
+}
+.work-card:hover{
+    transform: translateY(-5px);
+}
+
+.work-card{
+  transition: all 0.4s;
+}
+
+.image-container{
+    background: linear-gradient(to right,rgba(68, 92, 125 ,0.5),rgba(68, 92, 125 ,0.6)), url(https://bootstrapmade.com/content/demo/Arsha/assets/img/bg/bg-8.webp) fixed;
+}
